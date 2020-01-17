@@ -42,7 +42,6 @@ public class GsAsyncMethodApplication implements CommandLineRunner {
         while (!(page1.isDone() && page2.isDone() && page3.isDone())) {
             Thread.sleep(10); //millisecond pause between each check
         }
-
         // Print results, including elapsed time
         logger.info("Elapsed time: " + (System.currentTimeMillis() - start));
         logger.info("--> " + page1.get());
